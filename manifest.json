@@ -1,0 +1,33 @@
+  {
+    "name": "Testing 2.0",
+    "version": "1.0",
+    "description": "Upload Multiple XML Files!!",
+    "permissions": ["tabs"],
+    // "background": {
+    //   "scripts": ["background.js"],
+    //   "persistent": false
+    // },
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "browser_action": {
+    	"default_popup": "popup.html",
+    	"default_icon": {
+        "16": "images/picture1.png",
+        "32": "images/picture1.png",
+        "48": "images/picture1.png",
+        "128": "images/picture1.png"
+      }
+    },
+    "icons": {
+    	"16": "images/picture1.png",
+        "32": "images/picture1.png",
+        "48": "images/picture1.png",
+        "128": "images/picture1.png"
+    },
+    // "options_page": "options.html",
+    "manifest_version": 2
+  }
